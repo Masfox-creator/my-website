@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="google-site-verification" content="lsJGM5d2706GcB0-DrD6wSren42WdyiZfgoeDwuhpTE" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About US.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <input type="text" id="password" readonly>
+            <button onclick="generatePassword()">Generate</button>
+        </div>
+        <div class="options">
+            <label>
+                Password Length:
+                <input type="number" id="length" min="4" max="32" value="16">
+            </label>
+            <label>
+                <input type="checkbox" id="includeUppercase">
+                Uppercase Letters
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers">
+                Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="includeSymbols">
+                Symbols
+            </label>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide an easy tool to generate secure passwords to protect your accounts.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Password Generator. All rights reserved.</p>
+        <p><a href="privicy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
